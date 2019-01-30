@@ -44,7 +44,8 @@ header {
   background-image: url(Cytora_wordmark_RGB_white.png);
   background-position: left;
   background-repeat: no-repeat;
-  background-size: 20%;
+  background-size: 15%;
+  border: 75px solid
   position: relative;
 }
 
