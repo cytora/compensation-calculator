@@ -31,23 +31,23 @@ function formatNumbers(x, tag){
 
 	switch(numberType) {
 		case "dollar":
-			if (!x) return '$0';
+			if (!x) return '£0';
 			else {
 				var val = String(numberWithCommas(round(x, decimals)));
 
-				return "$" + padZeros(val, decimals)
+				return "£" + padZeros(val, decimals)
 			}
 			break;
 		case "bigdollar":
-			if (!x) return '$0';
+			if (!x) return '£0';
 			else {
 				if(x>=1000000&x<1000000000){
-					return "$" + String(numberWithCommas(round(x/1000000, 0))) + "m"
+					return "£" + String(numberWithCommas(round(x/1000000, 0))) + "m"
 				}
 				else if (x>=1000000000){
-					return "$" + String(numberWithCommas(round(x/1000000000, 2))) + "bn"
+					return "£" + String(numberWithCommas(round(x/1000000000, 2))) + "bn"
 				}
-				else return "$" + String(numberWithCommas(round(x, decimals)))
+				else return "£" + String(numberWithCommas(round(x, decimals)))
 			}
 			break;				
 		case "percent":
