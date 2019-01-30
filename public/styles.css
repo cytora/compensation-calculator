@@ -42,11 +42,9 @@ input {
 header {
   background-color: #3d4e5f;
   background-image: url(Cytora_wordmark_RGB_white.png);
-  background-position: left;
+  background-position: 4.5% 48%;
   background-repeat: no-repeat;
   background-size: 15%;
-  border: 75px solid
-  position: relative;
 }
 
 h1 {
